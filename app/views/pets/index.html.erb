@@ -1,0 +1,24 @@
+<h1 class="current-category"><%= params[:category] %></h1>
+
+<% if @pets.count == 0 %>
+
+	<h1>There are no pets currently in this category</h1>
+
+  <% else %>
+
+		<div class="row">
+
+<% @pets.each do |pet| %>
+<h2><%= pet.report %></h2>
+
+<div class="col-md-3">
+
+<a href="/pets/<%= pet.id %>">
+					<%= image_tag pet.pet_img.url(:pet_index), class: "pet" %>
+				</a>
+			</div>
+
+<% end %>
+</div>
+
+<% end %>

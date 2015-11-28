@@ -1,0 +1,11 @@
+<h1> Edit pet</h2>
+
+  <%= simple_form_for @pet, :html => { :multipart => true } do |f| %>
+    <%= f.select :category_id, @categories %>
+    <%= f.file_field :pet_img %>
+    <%= f.input :report, label: "Report Title" %>
+    <%= f.input :description %>
+    <%= f.input :where_specifics %>
+    <%= f.input :author %>
+    <%= f.button :submit %>
+<% end %>

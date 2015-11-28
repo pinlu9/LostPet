@@ -1,0 +1,31 @@
+<div class ="row">
+
+<div class="col-md-4">
+<%= image_tag @pet.pet_img.url(:pet_show), class: "pet-show" %>
+</div>
+
+	<div class="col-md-8">
+<h2><%= @pet.report %></h2>
+<h3><%= @pet.author %></h3>
+<h3><<%= @pet.description %></h3>
+</div>
+
+</div>
+
+<div class ="row">
+
+<div class="col-md-4">
+<!-- where the review and rating wil go  -->
+</div>
+</div>
+
+<%= link_to "Back", root_path %>
+
+<% if user_signed_in? %>
+
+<% if @pet.user_id == current_user.id %>
+
+  <%= link_to "Edit", edit_pet_path(@pet) %>
+  <%= link_to "Delete", pet_path(@pet), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
+<% end %>
+<% end %>

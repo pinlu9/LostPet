@@ -52,6 +52,7 @@ private
 
   def pet_params
     params.require(:pet).permit(:report, :description, :where_specifics, :author, :category_id, :pet_img, :petname, :breed, :type, :size, :gender, :age, :lastseen, :owner, :phone)
+    
   end
 
   def find_pet

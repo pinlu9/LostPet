@@ -1,9 +1,21 @@
 <%= simple_form_for @pet do |f| %>
   <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %>
   <%= f.file_field :pet_img %>
-  <%= f.input :report, label: "Report Title" %>
+  <%= f.input :petname %>
+  <%= f.input :breed %>
+
+  <%= f.input :color %>
+  <%= f.input :size %>
+  <%= f.input :gender %>
+  <%= f.input :age %>
+  <%= f.input :lastseen %>
+  <%= f.input :phone %>
+  <!-- <%= f.input :report, label: "Report Title" %> -->
   <%= f.input :description %>
-  <%= f.input :where_specifics %>
-  <%= f.input :author %>
+  <!-- <%= f.input :where_specifics %> -->
+  <!-- <%= f.input :author %> -->
+  <!-- <%= f.input :email %> -->
+
   <%= f.button :submit %>
+
 <% end %>

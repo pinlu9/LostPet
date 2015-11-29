@@ -7,4 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Category.create ([{name: "Cat"}, {name: "Dog"}, {name: "Other"}])
+Category.create ([{name: "Lost"}, {name: "Found"}])

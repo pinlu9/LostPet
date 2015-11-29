@@ -1,4 +1,4 @@
-class CreatePets < ActiveRecord::Migration
+class AddPetinfoToPets < ActiveRecord::Migration
   def change
     add_column :pets, :petname, :string
     add_column :pets, :breed, :string
@@ -9,19 +9,6 @@ class CreatePets < ActiveRecord::Migration
     add_column :pets, :age, :integer
     add_column :pets, :lastseen, :string
     add_column :pets, :owner, :string
-    add_column :pets, :email, :string
     add_column :pets, :phone, :string
-
-
-
-
-    create_table :pets do |t|
-      t.string :report
-      t.text :description
-      t.string :where_specifics
-      t.string :author
-
-      t.timestamps null: false
-    end
   end
 end

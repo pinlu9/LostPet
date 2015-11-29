@@ -27,10 +27,14 @@ ActiveRecord::Schema.define(version: 20151128231009) do
     t.text     "description"
     t.string   "where_specifics"
     t.string   "author"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.integer  "user_id"
     t.integer  "category_id"
+    t.string   "bpet_img_file_name"
+    t.string   "bpet_img_content_type"
+    t.integer  "bpet_img_file_size"
+    t.datetime "bpet_img_updated_at"
     t.string   "pet_img_file_name"
     t.string   "pet_img_content_type"
     t.integer  "pet_img_file_size"

@@ -40,13 +40,14 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
     else
         render 'edit'
   end
+end
 
   def destroy
     @pet.destroy
     redirect_to root_path
   end
 
-end
+
 
 private
 

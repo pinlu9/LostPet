@@ -1,25 +1,24 @@
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
 <div class="col-md-6 col-md-offset-3">
-
-	<div class="signup-form">
-
+	<div class="signup-form main">
 		<h2>Sign up</h2>
-
 		<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 		  <%= f.error_notification %>
 
 		  <div class="form-inputs">
-		    <%= f.input :email, required: true, autofocus: true %>
+		    <%= f.input :email, required: true, autofocus: true %><br />
 		    <%= f.input :password, required: true  %>
 		    <%= f.input :password_confirmation, required: true %>
 		  </div>
 
 		  <div class="form-actions">
+		  <br/>
 		    <%= f.button :submit, "Sign up", class: "btn-custom2" %>
 		  </div>
 		<% end %>
-
 		<%= render "devise/shared/links" %>
-
 	</div>
-
 </div>

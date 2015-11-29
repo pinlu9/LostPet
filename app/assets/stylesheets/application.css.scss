@@ -16,3 +16,28 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+    .main{
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 320px;
+      padding: 20px;
+     
+    }
+    .main input{
+      width: 100px;
+    }
+    .main label{
+      float: left;
+    }
+    .main input{
+
+    }
+    .simple_form{
+      background-color: lightyellow;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px soli yellow;
+    }
+

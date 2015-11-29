@@ -50,6 +50,7 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
     else
         render 'edit'
   end
+end
 
   def destroy
     @pet.destroy
@@ -60,7 +61,7 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
     # }
   end
 
-end
+
 
 private
 

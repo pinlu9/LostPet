@@ -22,21 +22,21 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
 		@pet = current_user.pets.build(pet_params)
 		@pet.category_id = params[:category_id]
 
-		# if @pet.save
-		# 	redirect_to root_path
-		# else
-		# 	render 'new'
-		# end
+		if @pet.save
+			redirect_to root_path
+		else
+			render 'new'
+		end
 
-    if @pet.save
-      render json: @pet 
-    else
-      render json: {
-              error: {
-                message: @todo.errors.full_messages.to_sentence
-              }
-      }
-    end
+    # if @pet.save
+    #   render json: @pet 
+    # else
+    #   render json: {
+    #           error: {
+    #             message: @todo.errors.full_messages.to_sentence
+    #           }
+    #   }
+    # end
 	 end
 
   def edit

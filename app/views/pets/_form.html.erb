@@ -1,18 +1,50 @@
-<%= simple_form_for @pet do |f| %>
-  <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %>
-  <%= f.file_field :pet_img %>
-  <%= f.input :petname %>
-  <%= f.input :breed %>
-  <%= f.input :color %>
-  <%= f.input :size %>
-  <%= f.input :gender %>
-  <%= f.input :age %>
-  <%= f.input :lastseen %>
-  <%= f.input :description %>
-  <%= f.input :owner %>
-  <%= f.input :phone %>
-  <%= f.input :description %>
+<style>
+    .main{
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 300px;
+      padding: 20px;
+      margin-left: 430px;
+    }
+    .main input{
+      width: 100px;
+    }
+    .main label{
+      float: left;
+    }
+    .main input{
 
-  <%= f.button :submit %>
+    }
+    .simple_form{
+      background-color: lightyellow;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px soli yellow;
+    }
+   
+</style>
+<div class="main">    
+  <h1>Post a report</h1>
+    <%= simple_form_for @pet do |f| %>
+      <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %><br />
+      <%= f.file_field :pet_img %><br />
+      <%= f.input :petname %><br />
+      <%= f.input :breed %><br />
 
-<% end %>
+      <%= f.input :color %><br />
+      <%= f.input :size %><br />
+      <%= f.input :gender %><br />
+      <%= f.input :age %><br />
+      <%= f.input :lastseen %><br />
+      <%= f.input :phone %>
+      <!-- <%= f.input :report, label: "Report Title" %> -->
+      <%= f.input :description %>
+      <!-- <%= f.input :where_specifics %> -->
+      <!-- <%= f.input :author %> -->
+      <!-- <%= f.input :email %> -->
+
+      <%= f.button :submit %>
+
+    <% end %>
+</div>

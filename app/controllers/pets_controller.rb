@@ -27,6 +27,16 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
 		else
 			render 'new'
 		end
+
+    # if @pet.save
+    #   render json: @pet 
+    # else
+    #   render json: {
+    #           error: {
+    #             message: @todo.errors.full_messages.to_sentence
+    #           }
+    #   }
+    # end
 	 end
 
   def edit
@@ -45,6 +55,10 @@ end
   def destroy
     @pet.destroy
     redirect_to root_path
+
+    # render json: {
+    #     message: "GONE!"
+    # }
   end
 
 
@@ -53,6 +67,7 @@ private
 
   def pet_params
     params.require(:pet).permit(:report, :description, :where_specifics, :author, :category_id, :pet_img, :petname, :breed, :type, :size, :gender, :age, :lastseen, :owner, :phone)
+    
   end
 
   def find_pet

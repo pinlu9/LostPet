@@ -5,6 +5,7 @@
       border-radius: 20px;
       width: 300px;
       padding: 20px;
+      margin-left: 430px;
     }
     .main input{
       width: 100px;
@@ -21,11 +22,10 @@
       border-radius: 10px;
       border: 1px soli yellow;
     }
-
    
 </style>
 <div class="main">    
-<h1>Post a report</h1>
+  <h1>Post a report</h1>
     <%= simple_form_for @pet do |f| %>
       <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %><br />
       <%= f.file_field :pet_img %><br />

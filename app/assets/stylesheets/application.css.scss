@@ -18,6 +18,31 @@
  @import "bootstrap";
 
 
+
+    .main{
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 320px;
+      padding: 20px;
+     
+    }
+    .main input{
+      width: 100px;
+    }
+    .main label{
+      float: left;
+    }
+    .main input{
+
+    }
+    .simple_form{
+      background-color: lightyellow;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px soli yellow;
+    }
+
 .navbar-brand{
   font-family: Rockwell Extra Bold;
   font-size: 25px;
@@ -33,6 +58,16 @@
 h1 {
   text-align: center;
 }
+
+
+
+footer img{
+    margin-bottom: -650px;
+}
+
+
+
+
 
 h2{
   text-align: center;
@@ -81,3 +116,4 @@ body > div.container > div > div {
     //    border-radius: 10px;
     //    border: 1px soli lightblue;
     //  }
+

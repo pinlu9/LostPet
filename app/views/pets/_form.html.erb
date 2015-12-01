@@ -2,6 +2,7 @@
 <div class="main">    
   <h1>Post a report</h1>
     <%= simple_form_for @pet do |f| %>
+
       <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %><br />
       <%= f.file_field :pet_img %><br />
       <%= f.input :petname %><br />
@@ -22,4 +23,5 @@
       <%= f.button :submit %>
 
     <% end %>
+</div>
 </div>

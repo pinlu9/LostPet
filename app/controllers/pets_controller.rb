@@ -29,7 +29,7 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
 		end
 
     # if @pet.save
-    #   render json: @pet 
+    #   render json: @pet
     # else
     #   render json: {
     #           error: {
@@ -67,10 +67,11 @@ private
 
   def pet_params
     params.require(:pet).permit(:report, :description, :where_specifics, :author, :category_id, :pet_img, :petname, :breed, :type, :size, :gender, :age, :lastseen, :owner, :phone)
-    
+
   end
 
   def find_pet
     @pet = Pet.find(params[:id])
   end
+
 end

@@ -1,22 +1,29 @@
 <center><h1>Update</h1></center>
 
 
+<div class ="row">
 
   <%= simple_form_for @pet, :html => { :multipart => true } do |f| %>
   <div class="col-md-4">
   <%= image_tag @pet.pet_img.url(:pet_show), class: "pet-show" %>
+  <%= f.select :category_id, @categories %>
+  <%= f.file_field :pet_img %>
   </div>
-    <%= f.select :category_id, @categories %>
-    <%= f.file_field :pet_img %>
-    <%= f.input :petname %>
-    <%= f.input :breed %>
-    <%= f.input :color %>
-    <%= f.input :size %>
-    <%= f.input :gender %>
-    <%= f.input :age %>
-    <%= f.input :lastseen %>
-    <%= f.input :description %>
-    <%= f.input :owner %>
-    <%= f.input :phone %>
-    <%= f.button :submit %>
+
+  <div class="col-md-8">
+
+    <h4><%= f.input :petname %><h4>
+    <h4><%= f.input :breed %><h4>
+    <h4><%= f.input :color %><h4>
+    <h4><%= f.input :size %><h4>
+    <h4><%= f.input :gender %><h4>
+    <h4><%= f.input :age %><h4>
+    <h4><%= f.input :lastseen %><h4>
+    <h4><%= f.input :description %><h4>
+    <h4><%= f.input :owner %><h4>
+    <h4><%= f.input :phone %><h4>
+    <Br>
+    <h4><%= f.button :submit %><h4>
 <% end %>
+</div>
+</div>

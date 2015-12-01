@@ -17,48 +17,21 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-
-
-    .main{
-      text-align: center;
-      border: 1px solid black;
-      border-radius: 20px;
-      width: 320px;
-      padding: 20px;
-     
-    }
-    .main input{
-      width: 100px;
-    }
-    .main label{
-      float: left;
-    }
-    .main input{
-
-    }
-    .simple_form{
-      background-color: lightyellow;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px soli yellow;
-    }
-
 .navbar-brand{
-  font-family: Rockwell Extra Bold;
-  font-size: 25px;
-  opacity: 0.8;
-}
+  font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
+  font-size: 30px;
 
-.current-category {
-	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
-	font-size: 60px;
 }
 
 
 h1 {
   text-align: center;
+  font-family: "Rockwell Extra Bold","Rockwell Bold",monospace
 }
 
+h2, h3, h4{
+    font-family: "Rockwell","Rockwell Regular",monospace;
+}
 
 
 footer img{
@@ -66,12 +39,6 @@ footer img{
 }
 
 
-
-
-
-h2{
-  text-align: center;
-}
 .footer {
   position: fixed;
   right: 0;
@@ -94,28 +61,34 @@ body > div.container > div > div {
   text-align: center;
 }
 
-// sign up and log in
-    //  .main{
-    //    text-align: center;
-    //    border: 1px solid black;
-    //    border-radius: 20px;
-    //    width: 300px;
-    //    padding: 20px;
-    //    margin-left: 430px;
-    //  }
-    //  .main input{
-    //    width: 100px;
-    //  }
-    //  .main label{
-    //    float: left;
-    //  }
-    //  .main input{
-     //
-    //  }
-    //  .simple_form{
-    //    background-color: lightblue;
-    //    padding: 10px;
-    //    border-radius: 10px;
-    //    border: 1px soli lightblue;
-    //  }
+input{
+  margin-left: 5px;
+}
 
+
+
+
+// sign up and log in
+//      .main{
+//        text-align: center;
+//        border: 1px solid black;
+//        border-radius: 20px;
+//        width: 300px;
+//        padding: 20px;
+//        margin-left: 430px;
+//      }
+//      .main input{
+//        width: 100px;
+//      }
+//      .main label{
+//        float: left;
+//      }
+//      .main input{
+//
+//      }
+//      .simple_form{
+//        background-color: lightblue;
+//        padding: 10px;
+//        border-radius: 10px;
+//        border: 1px soli lightblue;
+//      }

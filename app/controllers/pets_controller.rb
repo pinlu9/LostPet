@@ -29,7 +29,7 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
 		end
 
     # if @pet.save
-    #   render json: @pet 
+    #   render json: @pet
     # else
     #   render json: {
     #           error: {
@@ -51,10 +51,6 @@ before_action :find_pet, only: [:show, :edit, :update, :destroy]
         render 'edit'
   end
 end
-<<<<<<< HEAD
-
-=======
->>>>>>> 77692f1aec015697453e9aa17304016cf81564b7
 
   def destroy
     @pet.destroy
@@ -71,7 +67,7 @@ private
 
   def pet_params
     params.require(:pet).permit(:report, :description, :where_specifics, :author, :category_id, :pet_img, :petname, :breed, :type, :size, :gender, :age, :lastseen, :owner, :phone)
-    
+
   end
 
   def find_pet
@@ -79,4 +75,3 @@ private
   end
 
 end
-

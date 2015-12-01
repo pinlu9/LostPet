@@ -1,19 +1,24 @@
 
-<div class="main">
+<div class="main">    
   <h1>Post a report</h1>
     <%= simple_form_for @pet do |f| %>
       <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %><br />
       <%= f.file_field :pet_img %><br />
       <%= f.input :petname %><br />
       <%= f.input :breed %><br />
+
       <%= f.input :color %><br />
       <%= f.input :size %><br />
       <%= f.input :gender %><br />
       <%= f.input :age %><br />
       <%= f.input :lastseen %><br />
-      <%= f.input :description %>
-      <%= f.input :owner %>
       <%= f.input :phone %>
+      <!-- <%= f.input :report, label: "Report Title" %> -->
+      <%= f.input :description %>
+      <!-- <%= f.input :where_specifics %> -->
+      <!-- <%= f.input :author %> -->
+      <!-- <%= f.input :email %> -->
+
       <%= f.button :submit %>
 
     <% end %>

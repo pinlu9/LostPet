@@ -2,17 +2,18 @@
 
 
 <div class ="row">
-
-  <%= simple_form_for @pet, :html => { :multipart => true } do |f| %>
   <div class="col-md-4">
-  <%= image_tag @pet.pet_img.url(:pet_show), class: "pet-show" %>
-  <%= f.select :category_id, @categories %>
-  <%= f.file_field :pet_img %>
+    <%= simple_form_for @pet, :html => { :multipart => true } do |f| %>
+
+      <%= image_tag @pet.pet_img.url(:pet_show), class: "pet-show" %>
+      <br>
+      <%= f.select :category_id, @categories %>
+      <%= f.file_field :pet_img %>
   </div>
 
   <div class="col-md-8">
 
-    <h4><%= f.input :petname %><h4>
+    <h3><%= f.input :petname %><h3>
     <h4><%= f.input :breed %><h4>
     <h4><%= f.input :color %><h4>
     <h4><%= f.input :size %><h4>

@@ -16,3 +16,38 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+.navbar-brand{
+  font-family: Rockwell Extra Bold;
+  font-size: 25px;
+
+  opacity: 0.8;
+}
+
+.current-category {
+
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	font-size: 60px;
+}
+
+
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  text-align: center;
+  color:black;
+  opacity: 0.8;
+}
+
+
+body > center:nth-child(4) > div.container > div > div {
+	margin-bottom: 15px;
+
+}
+

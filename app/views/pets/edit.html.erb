@@ -1,11 +1,22 @@
-<h1> Edit pet</h2>
+<center><h1>Update</h1></center>
+
+
 
   <%= simple_form_for @pet, :html => { :multipart => true } do |f| %>
+  <div class="col-md-4">
+  <%= image_tag @pet.pet_img.url(:pet_show), class: "pet-show" %>
+  </div>
     <%= f.select :category_id, @categories %>
     <%= f.file_field :pet_img %>
-    <%= f.input :report, label: "Report Title" %>
+    <%= f.input :petname %>
+    <%= f.input :breed %>
+    <%= f.input :color %>
+    <%= f.input :size %>
+    <%= f.input :gender %>
+    <%= f.input :age %>
+    <%= f.input :lastseen %>
     <%= f.input :description %>
-    <%= f.input :where_specifics %>
-    <%= f.input :author %>
+    <%= f.input :owner %>
+    <%= f.input :phone %>
     <%= f.button :submit %>
 <% end %>

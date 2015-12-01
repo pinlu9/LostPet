@@ -17,31 +17,66 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+
+.navbar-brand{
+  font-family: Rockwell Extra Bold;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+.current-category {
+	font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+	font-size: 60px;
+}
+
+
 h1 {
   text-align: center;
 }
 
-// sign up and log in
-     .main{
-       text-align: center;
-       border: 1px solid black;
-       border-radius: 20px;
-       width: 300px;
-       padding: 20px;
-       margin-left: 430px;
-     }
-     .main input{
-       width: 100px;
-     }
-     .main label{
-       float: left;
-     }
-     .main input{
+h2{
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  text-align: center;
+  color:black;
+  opacity: 0.8;
+}
 
-     }
-     .simple_form{
-       background-color: lightblue;
-       padding: 10px;
-       border-radius: 10px;
-       border: 1px soli lightblue;
-     }
+
+body > div.container > div > div {
+	margin-bottom: 15px;
+}
+
+
+// sign up and log in
+    //  .main{
+    //    text-align: center;
+    //    border: 1px solid black;
+    //    border-radius: 20px;
+    //    width: 300px;
+    //    padding: 20px;
+    //    margin-left: 430px;
+    //  }
+    //  .main input{
+    //    width: 100px;
+    //  }
+    //  .main label{
+    //    float: left;
+    //  }
+    //  .main input{
+     //
+    //  }
+    //  .simple_form{
+    //    background-color: lightblue;
+    //    padding: 10px;
+    //    border-radius: 10px;
+    //    border: 1px soli lightblue;
+    //  }
